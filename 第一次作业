@@ -1,3 +1,4 @@
+【壹】
 //Author:WuShuo
 //Date:9/27/2019
 #include<stdio.h> //实现使用编译预处理命令来调用C的标准库函数 
@@ -13,3 +14,30 @@ int main(void)//调用主函数main()，C程序从主程序开始执行
 	printf("a=%x\n\n",a);//以十六进制形式输出变量a的值 
 	return 0;//输出主函数返回值0 
 }//将主函数语句用花括号括起来
+
+【贰】
+//Author:WuShuo
+//Date:9/27/2019
+#include<stdio.h>
+main(){
+	printf("*\n**\n***\n****\n*****\n******\n\n"); 
+return 0;
+} 
+//观察形状为半个三角形，三角形下方有两行空格 
+
+【叁】
+//Author:WuShuo
+//Date:9/27/2019
+#include<stdio.h>
+main(){ 
+	float A,B;
+	printf("请在输入减数后敲击回车以输入被减数\n");
+	printf("A=");
+	scanf("%f",&A);
+	printf("B=");
+	scanf("%f",&B);
+	float Sub;
+	Sub=A-B;
+	printf("Quotient= %f\n",Sub);
+return 0;
+} 

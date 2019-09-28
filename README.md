@@ -1,6 +1,6 @@
 # TaskOfC
 吴硕同学的C语言作业
-————————————————————
+
 Disclaimer：
 This Repositories is supposed to help people who meet DIFFICLUTIES with C.
 DON NOT COPY ANY CODE.

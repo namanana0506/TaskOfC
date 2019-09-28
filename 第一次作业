@@ -1,1 +1,145 @@
 
+（1）
+//Author:WuShuo
+//Date:9/27/2019
+//原题 
+// 在计算机 C 编译器中建立下面的程序，编译并运行该程序。
+//请你仿照程序中列出的第一条注释语句的内容，
+//给所有后续的执行语句添加注释信息，内容是解释该行语句的作用是什么。 
+#include<stdio.h> //实现使用编译预处理命令来调用C的标准库函数 
+int main(void)//调用主函数main()，C程序从主程序开始执行 
+{//将主函数语句用花括号括起来 
+	int x=16;//定义(declare)十进制整形变量x，并为其赋值为10 
+	int y=020;//定义(declare)八进制整形变量y，并为其赋值为020 
+	int z=0x10;//定义(declare)十六进制整形变量z，并为其赋值为 0x10 
+	int a=90;//定义(declare)十进制整形变量a，并为其赋值为90 
+	printf("十进制数：%d,%d,%d\n",x,y,z);//以十进制形式显示变量x,y,z的值
+	printf("八进制数：%o,%o,%o\n",x,y,z);//以八进制形式显示变量x,y,z的值 
+	printf("\na=%d\n",a);//以整形形式输出变量a的值 
+	printf("a=%x\n\n",a);//以十六进制形式输出变量a的值 
+	return 0;//输出主函数返回值0 
+}//将主函数语句用花括号括起来
+
+（2）
+//Author:WuShuo
+//Date:9/27/2019
+//原题： 
+//设计一个包含下面 printf()函数的程序，使其可以运行，
+//运行后观察程序输出的结果。 
+#include<stdio.h>
+main(){
+	printf("*\n**\n***\n****\n*****\n******\n\n"); 
+return 0;
+} 
+//观察形状为半个三角形，三角形下方有两行空格 
+
+（3）
+//Author:WuShuo
+//Date:9/27/2019
+//原题：
+// 建立一个通用的减法器，
+//求任意输入的两个实型数值（使用 scanf()函数输入实型数据）的差。 
+#include<stdio.h>
+main(){ 
+	float A,B;
+	printf("请在输入减数后敲击回车以输入被减数\n");
+	printf("A=");
+	scanf("%f",&A);
+	printf("B=");
+	scanf("%f",&B);
+	float Sub;
+	Sub=A-B;
+	printf("Quotient= %f\n",Sub);
+return 0;
+} 
+
+（4）
+//Author:WuShuo
+//Date:9/27/2019
+//原题：
+// 设计程序查看当前你正在使用的 C 编译器的各种变量类型的长度
+//（即每种类型占用的字节数）。 
+#include<stdio.h>
+main(){
+	printf("Date Type             number of bytes\n");
+	printf("---------             --------------------\n");
+	printf("char                  %d\n",sizeof(char));
+	printf("int                   %d\n",sizeof(int));
+	printf("short                 %d\n",sizeof(short));
+    printf("short int             %d\n",sizeof(short int));
+	printf("long int              %d\n",sizeof(long int));
+	printf("float                 %d\n",sizeof(float));
+	printf("double                %d\n",sizeof(double));
+}
+
+（5）
+//Author:WuShuo
+//Date:9/27/2019
+//原题：
+//编程实现将输入的小写英文字母转换为大写字母去显示 
+#include<stdio.h>
+main()
+{
+	char X;
+	printf("现在输入小写字母并敲击回车：\n");
+	X=getchar();
+	X=X-32;
+	putchar(X);
+	putchar('\n');
+	return 0;
+	}
+  
+  （6）
+  //Author:WuShuo
+//Date:9/28/2019
+//原题： 
+//设计一个程序，对输入的任何一个简单的算术运算式，程序都可以显示正确的运算结果。
+//本题要求只针对正整数进行算术运算，如果输入了非正整数，则程序不做运算而立即结束。
+//本题要处理的算术运算包括加、减、乘、除、求余，
+//例如：5+4，或者 20-9，或者 25/5，或者 9*23，或者 32%6 。
+#include<stdio.h>
+main(){
+	int a,b;
+	char c;
+	char l="%";
+	printf("您输入的数必须为正整数，现在输入一个简单的算术运算式：");
+	scanf("%d%c%d",&a,&c,&b);
+	if (a>0&b>0)
+		switch(c){
+			case'+':
+				printf("%d+%d=%d\n",a,b,a+b);
+				break;
+			case'-':
+				printf("%d-%d=%d\n",a,b,a-b);
+				break;
+			case'*':
+				printf("%d*%d=%d\n",a,b,a*b);
+			    break;
+			case'/': 
+				printf("%d/%d=%d\n",a,b,a/b);
+				break;
+			case'%':
+				printf("%d%%%d=%d\n",a,b,a%b);//%%在引号内会转化为%，故使用%%%解决显示问题 
+				break;
+			default:
+				printf("您输入的运算表达式非法或运算法则不支持!");
+				break; 
+				}
+	else 
+		printf("您输入的运算表达式非法！");
+return 0; 
+} 
+
+（7）
+//Author:WuShuo
+//Date:9/28/2019
+#include<stdio.h>
+main(){
+	int a,b,c,W,V,M;//定义整形变量 a（长） b（宽） c（高） W（重量）和 V（体积） M（价格） 
+	printf("输入运输箱长(a) 宽(b) 高(c)\na b c\n");
+	scanf("%d%d%d",&a,&b,&c);
+	V=a*b*c;
+	W=(V+165)/166;
+	M=35*W;
+	printf("邮件费用=%d",M);
+} 

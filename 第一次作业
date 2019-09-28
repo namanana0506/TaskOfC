@@ -66,7 +66,7 @@ main(){
 	printf("char                  %d\n",sizeof(char));
 	printf("int                   %d\n",sizeof(int));
 	printf("short                 %d\n",sizeof(short));
-    printf("short int             %d\n",sizeof(short int));
+        printf("short int             %d\n",sizeof(short int));
 	printf("long int              %d\n",sizeof(long int));
 	printf("float                 %d\n",sizeof(float));
 	printf("double                %d\n",sizeof(double));
@@ -90,7 +90,7 @@ main()
 	}
   
   （6）
-  //Author:WuShuo
+//Author:WuShuo
 //Date:9/28/2019
 //原题： 
 //设计一个程序，对输入的任何一个简单的算术运算式，程序都可以显示正确的运算结果。

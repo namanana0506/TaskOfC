@@ -101,7 +101,6 @@ main()
 main(){
 	int a,b;
 	char c;
-	char l="%";
 	printf("您输入的数必须为正整数，现在输入一个简单的算术运算式：");
 	scanf("%d%c%d",&a,&c,&b);
 	if (a>0&b>0)

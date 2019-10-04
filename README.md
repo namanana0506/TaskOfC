@@ -2,7 +2,7 @@
 吴硕同学的C语言作业
 
 Disclaimer：
-This Repository is supposed to help people who meet DIFFICLUTIES with C.
+This Repository is supposed to help people who meet DIFFICLUTIES with C language.
 DON NOT COPY ANY CODE.
 IT JUST GIVES YOUR SOME GUIDENCES.
 The Author(WuShuo) can not be held responsibile for any incorrect using.

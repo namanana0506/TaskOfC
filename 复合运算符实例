@@ -1,0 +1,20 @@
+//Author:WuShuo
+// Date:10/4/2019
+#include<stdio.h>
+int main(){
+	//形如X++实例 
+	int a=1;
+	printf("%d\n",a++);
+	printf("%d\n",a);
+	//形如++X实例 
+	int b=1;
+	printf("%d\n",++b);
+	printf("%d\n",b);
+	//形如X*=a+b实例（复合运算符自右向左运算）
+	int X = 2;
+	int c = 1;
+	int d = 2;
+	X*=c+d;
+	printf("%d",X);
+	return 0;
+} 

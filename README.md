@@ -3,7 +3,7 @@
 
 Disclaimer：
 This Repository is supposed to help people who meet DIFFICLUTIES with C language.
-DON NOT COPY ANY CODE.
+DO NOT COPY ANY CODE.
 IT JUST GIVES YOUR SOME GUIDENCES.
 The Author(WuShuo) can not be held responsibile for any incorrect using.
 
